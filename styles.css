@@ -1,50 +1,54 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
 
-:root{
-    --verydarkgrayishblue: hsl(217, 19%, 35%);
-    --desaturateddarkblue: hsl(214, 17%, 51%);
-    --grayishblue: hsl(212, 23%, 69%);
-    --lightgrayishblue: hsl(210, 46%, 95%);    
+:root {
+  --verydarkgrayishblue: hsl(217, 19%, 35%);
+  --desaturateddarkblue: hsl(214, 17%, 51%);
+  --grayishblue: hsl(212, 23%, 69%);
+  --lightgrayishblue: hsl(210, 46%, 95%);
 }
 
-html, body{
-    height: 100%;
-    margin: 0;
-    background-color: var(--lightgrayishblue);
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-color: var(--lightgrayishblue);
 }
 
-p, h3, h6 {
-    font-family: 'Manrope', sans-serif;
+p,
+h3,
+h6 {
+  font-family: "Manrope", sans-serif;
 }
 
-body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 2rem;
-    padding-right: 2rem;
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
-.card{
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    border-radius: 1rem;
-    justify-content: center;
-    align-items: center;
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 1rem;
+  justify-content: center;
+  align-items: center;
 }
 
-.body-card{
-    padding-left: 1.8rem;
-    padding-right: 1.8rem;
-    padding-top: 1rem;
+.body-card {
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
+  padding-top: 1rem;
 }
 
-.responsive-image{
-    display: flex;
+.responsive-image {
+  display: flex;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .responsive-image {
     width: 100%;
     max-height: 300px;
@@ -52,70 +56,86 @@ body{
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
   }
-}
-
-@media (min-width: 600px) {
-  .responsive-image {
-    width: 300px;
+  .card {
+    max-width: 315px;
   }
 }
 
-.footer-user{
+@media (min-width: 800px) {
+  .responsive-image {
+    width: 300px;
+    height: 100%;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+
+  .card {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.avatar{
-    border-radius: 100%;
-    width: 2.5rem;
-    height: 2.5rem;
-    margin-right: 1rem;
-}
-
-.avatar-info{
-    display: flex;
-    flex-direction: column;
+    background-color: white;
+    border-radius: 1rem;
     justify-content: center;
-}
-
-.name-avatar{
-    margin-bottom: 0.2rem;   
-    color: var(--verydarkgrayishblue);
-    font-size: 0.7rem;
-    font-weight: 700;
-}
-
-.date-avatar{
-    color: var(--grayishblue);   
-    margin-top: 0rem;
-}
-
-.header-text{
-    color: var(--verydarkgrayishblue);
-    font-size: medium;
-    line-height: 25px;
-}
-
-.body-text{
-    color: var(--grayishblue);
-    font-size: 13px;
-    line-height: 20px;
-}
-
-.avatar-container{
-    display: flex;
-    justify-content: space-between; 
-    flex-direction: row;
     align-items: center;
+    max-width: 750px;
+  }
 }
 
-.share-button{
-    background-color: var(--lightgrayishblue);
-    color: var(--verydarkgrayishblue);
-    border-radius: 100%;
-    height: 2rem;
-    width: 2rem;
-    border-style: none;
+.footer-user {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.avatar {
+  border-radius: 100%;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 1rem;
+}
+
+.avatar-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.name-avatar {
+  margin-bottom: 0.2rem;
+  color: var(--verydarkgrayishblue);
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.date-avatar {
+  color: var(--grayishblue);
+  margin-top: 0rem;
+}
+
+.header-text {
+  color: var(--verydarkgrayishblue);
+  font-size: medium;
+  line-height: 25px;
+}
+
+.body-text {
+  color: var(--grayishblue);
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.avatar-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+.share-button {
+  background-color: var(--lightgrayishblue);
+  color: var(--verydarkgrayishblue);
+  border-radius: 100%;
+  height: 2rem;
+  width: 2rem;
+  border-style: none;
 }
